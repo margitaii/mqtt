@@ -16,7 +16,7 @@ def on_publish(mosq, userdata, mid):
     client.disconnect()
 
 client = mqtt.Client("P1") #create new instance
-client.username_pw_set(username='istvan', password='kgt6st9')
+client.username_pw_set(username='', password='')
 client.on_publish = on_publish
 
 client.connect(broker_address) #connect to broker

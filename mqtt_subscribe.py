@@ -18,7 +18,7 @@ def on_message(client, userdata, message):
     print("message retain flag=",message.retain)
 
 client = mqtt.Client("P1") #create new instance
-client.username_pw_set(username='istvan', password='kgt6st9')
+client.username_pw_set(username='', password='')
 client.on_message = on_message
 client.connect(broker_address) #connect to broker
 
